@@ -6,7 +6,7 @@
 *
 * indentity: Returns the given value unchanged.
 *
-* @param {value} value: Input value can be any datatype.
+* @param {Any Datatype} value: Input value can be any datatype.
 *
 * @return {Value}: The value returned will be the same as the input value unaltered.
 */
@@ -24,7 +24,7 @@
 /**
  * typeOf: Returns the type of <value> as a string.
  * 
- * @param {value}: The <value> input can be any datatype.
+ * @param {Any Datatype} input: The <value> input can be any datatype.
  * 
  * @return {string}: a string will be returned that signifies what type of
  * datatype <value> is.
@@ -57,8 +57,8 @@
  * first: This function takes in an <array> and <number> as it's inputs and returns the 
  * first <number> of items in <array>.
  * 
- * @param {array}: will be accessed to return a set of elements.
- * @param {number}: this numerical value will tell the function how many elements
+ * @param {Array} array: will be accessed to return a set of elements.
+ * @param {Number} number: this numerical value will tell the function how many elements
  * to return from the beginning of the input array.
  * 
  * @return: The function will return the first <number> of items in <array>. 
@@ -104,10 +104,10 @@
 /**
  * last: This function will return the last <number> of elements from <array>.
  * 
- * @param {array}: The array input is the collection that we will use to return a 
+ * @param {Array} array: The array input is the collection that we will use to return a 
  * specified number of elements from. 
  * 
- * @param {number}: The number input tells us to return the last <number> elements
+ * @param {Number} number: The number input tells us to return the last <number> elements
  * of <array>.
  * 
  * @return: The function will return the last <number> elements from <array>.
@@ -145,10 +145,10 @@
   * indexof: This function will return the index of the first occurance of <value>
   * in <array>.
   * 
-  * @param {array}: The array is whats to be iterated through to find the index 
+  * @param {Array} array: The array is whats to be iterated through to find the index 
   * of the first occurence of <value>.
   * 
-  * @param {value}: <value> will be checked against <array> to find the index
+  * @param {Any Dataype} value: <value> will be checked against <array> to find the index
   * of it's first occurence.
   * 
   * @return: This function will return the index of the first occurence of <value>
@@ -180,9 +180,9 @@
  * contains: This function will iterate through <array> and check if it contains
  * <value>.
  * 
- * @param {array}: The collection to be iterated through to search for <value>.
+ * @param {Array} array: The collection to be iterated through to search for <value>.
  * 
- * @param {value}: The value will be checked against <array> to see if it exists.
+ * @param {Any Datatype} value: The value will be checked against <array> to see if it exists.
  * 
  * @return: This function will return true if <array> contains <value>, false
  * otherwise.
@@ -243,7 +243,7 @@
  * unique: This function will take an array and return a new array of all it's
  * elements w/ duplicates removed.
  * 
- * @param {array}: This function will take an array of values which may or may
+ * @param {Array} array: This function will take an array of values which may or may
  * not have duplicate elements.
  * 
  * @return: This function will return us a NEW array with all of the originals
@@ -271,14 +271,14 @@
         
         
 /**
- * filter: This function will call a given function on all the elements from the
- * given array and return a new array of all elements for which calling the 
+ * filter: This function will call a given function on all the elements, index, and collection
+ * from the given array and return a new array of all elements for which calling the 
  * function returns true.
  * 
- * @param {array}: This function will take an array that will be acted on by 
+ * @param {Array} array: This function will take an array that will be acted on by 
  * the given function.
  * 
- * @param {func} Function: This function will also take a function to be called
+ * @param {Function} func: This function will also take a function to be called
  * on each element to test its truthyness.
  * 
  * @return: This function will return a new array of all elements for which
@@ -307,14 +307,14 @@
         
 
 /**
- * reject: This function will call a given function on each element of the given
- * array and return a new array of all elements for which calling the function
+ * reject: This function will call a given function on each element, index, and collection
+ * of the given array and return a new array of all elements for which calling the function
  * returns false.
  * 
- * @param {array}: This function takes an array of elements for which to call 
+ * @param {Array} array: This function takes an array of elements for which to call 
  * the given function on.
  * 
- * @param {func} Function: This function will take a function that will be called on
+ * @param {Function} func: This function will take a function that will be called on
  * every element of the given array.
  * 
  * @return: This function will return a new array containing the elements of the
@@ -346,14 +346,14 @@
         
         
 /**
- * partition: This function will call a given function on each element of a given
- * array and return a new array containing two subarrays, one for which call the 
+ * partition: This function will call a given function on each element, index, and collection 
+ * of a given array and return a new array containing two subarrays, one for which call the 
  * given function returns truthy, the other containing elements which return falsey.
  * 
- * @param {array}: This function will take an array of elements to be applied
+ * @param {Array} arrat: This function will take an array of elements to be applied
  * a function.
  * 
- * @param {func} Function: This function will take a function which will be called on
+ * @param {Function} func: This function will take a function which will be called on
  * each element of the given array.
  * 
  * @return: This function will return a new array containing two subarrays, one 
@@ -395,9 +395,9 @@
  * map: This function will call a given function on each element of a given 
  * collection and return a new array containing all the return values.
  * 
- * @param {collection}: This function will take either an array or an object.
+ * @param {Array or Object} collection: This function will take either an array or an object.
  * 
- * @param {func} Function: This function will take a function that will act on
+ * @param {Function} func: This function will take a function that will act on
  * the elements of the given collection.
  * 
  * @return: The function will return a new array containing all the return values.
@@ -407,7 +407,7 @@
  
     //Usage:
     
-        _.map = function(collection, func) {
+        function map(collection, func) {
     
             var aNewArray = [];
             
@@ -441,9 +441,9 @@
  * pluck: This function utilizes map to return an array containing the value of 
  * <property> for every element in <array>.
  * 
- * @param {array}: This function takes an array of objects.
+ * @param {Array} arrayOfObj: This function takes an array of objects.
  * 
- * @param {property}: This function also takes a property.
+ * @param {String} property: This function also takes a property.
  * 
  * @return: Returns an array containing every value of <property> for every
  * element in <array>.
@@ -453,7 +453,7 @@
  
     //Usage:
     
-        _.pluck = function(arrayOfObj, property) {
+        function pluck(arrayOfObj, property) {
             
            return arrayOfObj.map((element, index, arrayOfObj) => {
                
@@ -475,10 +475,12 @@
  * If the return value of calling <func> for every element is true, return true. 
  * If even one returns false, this function returns false.
  * 
- * @param {collection}: This function can either take an array or object.
+ * @param {Array or Object} collection: This function can either take an array or object.
  * 
- * @param {func}: This function will take in a <func> that will be called w/
- * every element of the collection.
+ * @param {Function} func: This function will take in a <func> that will be called w/
+ * every element of the collection. If <func> is not provided, <collection> will
+ * be iterated through to search for any falsey values, if found, false is
+ * returned, true otherwise.
  * 
  * @return: If the return value of calling <func> for every element is true, this 
  * function will return true, if even one is false, it will return false.
@@ -532,10 +534,11 @@
  * If the return value of calling <func> for even one element is true, return true. 
  * If all are false, this function returns false.
  * 
- * @param {collection}: This function can either take an array or object.
+ * @param {Array or Object} collection: This function can either take an array or object.
  * 
- * @param {func}: This function will take in a <func> that will be called w/
- * every element of the collection.
+ * @param {Function} func: This function will take in a <func> that will be called w/
+ * every element of the collection. If <func> is not provided, <collection> will get 
+ * iterated through to check for ANY truthy values, if even one is found, true will be returned.
  * 
  * @return: If the return value of calling <func> for at least element is true, this 
  * function will return true, if all are false, it will return false.
@@ -586,12 +589,12 @@
  * reduce: This function will call <func> on every element in the <array>, constantly
  * reassigning the 'current value' as the previous <func> call's result. 
  * 
- * @param {array}: This function will take in an array to iterate through.
+ * @param {Array} array: This function will take in an array to iterate through.
  * 
- * @param {func}: This function will take in another function that will serve
+ * @param {Function} func: This function will take in another function that will serve
  * as the 'action' function so be called on every element of <array>.
  * 
- * @param {seed}: If <seed> is provided, this function will use it as the
+ * @param {Any Datatype} seed: If <seed> is provided, this function will use it as the
  * 'current value' at the first iteration.
  * 
  * @return: After <func> has been called on all elements of <array>, this function
@@ -638,7 +641,7 @@
  * extend: This function will take multiple objects and copy into the first
  * object, all the properties of the other objects.
  * 
- * @param {object} Multiple Objects: This function will take at least two objects
+ * @param {Objects} obj1, obj2, ...objects: This function will take at least two objects
  * as paramaters with the possibility of 3 or more.
  * 
  * @return: This function will return an object containing all the properties
